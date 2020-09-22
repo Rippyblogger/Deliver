@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    background-color: white;
+    color: black;
+}
+
+/*Navigation*/
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5A49EE;
+}
+
+.logo li {
+    color: white;
+}
+
+.nav-container>ul li {
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.nav-links li:hover {
+    color: white;
+    background-color: #262831;
+}
+
+.nav-container>ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.nav-container ul li a:hover {}
+
+/* banner styling */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    background-color: #5A49EE;
+
+}
+
+.banner-pic {
+    animation: popout 1s ease, upNdown 1.5s infinite linear;
+    -webkit-animation: popout 1s ease, upNdown 1.5s infinite linear;
+
+}
+
+/* Header image animation */
+
+@keyframes popout {
+    from {
+        transform: scale(0)
+    }
+
+    80% {
+        transform: scale(1.2)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes popout {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    80% {
+        -webkit-transform: scale(1.2)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@-webkit-keyframes upNdown {
+    0% {}
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {}
+}
+
+@keyframes upNdown {
+    0% {}
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {}
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    align-items: center;
+}
+
+.banner-content h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-justify: auto;
+    padding: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons li {
+    padding: 1rem;
+    list-style: none;
+    border: solid 1px white;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.buttons li:hover {
+    background-color: white;
+    color: #5A49EE;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.pricing-container div {
+    box-shadow: 3px 7px 9px 5px rgba(198, 204, 203, 0.8);
+}
+
+.pricing-container li {
+    padding: 0.5rem 2rem 2rem 0.5rem;
+    list-style: none;
+    text-align: center;
+
+}
+
+.pricing-container div li a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #5A49EE;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.pricing-container div li a:hover {
+    color: white;
+    background-color: #5A49EE;
+}
+
+
+.pricing-container div li a:active {
+    color: white;
+    background-color: #5A49EE;
+}
+
+.price-header {
+    font-size: 2rem;
+    color: #5A49EE;
+}
+
+.price {
+    font-size: 1.4rem;
+    color: #EEC648;
+}
+
+
+/* Content 2 */
+
+.content2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    background-color: white;
+    padding: 1rem;
+}
+
+
+.secondpic{
+    width: 90%;
+    padding: 1rem 5rem;
+}
+
+.content2 div hi{
+    padding: 1rem;
+}
+
+.content2 div ul li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        padding: 1rem;
+    }
+
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .pricing-container div {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 2240px) {
+    .nav-container {
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    .banner-content {
+        padding-top: 10rem;
+    }
+
+    .pricing-container {
+        flex-direction: row;
+    }
+
+    .pricing-container div {
+        width: 30%;
+    }
+
+
+}
