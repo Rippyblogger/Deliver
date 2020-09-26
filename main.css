@@ -38,7 +38,6 @@
     padding: 1rem;
 }
 
-.nav-container ul li a:hover {}
 
 /* banner styling */
 
@@ -247,6 +246,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
+    background-color: #EEC648;
 }
 
 .feature-items div {
@@ -272,25 +272,84 @@
     padding: 2rem;
 }
 
+.brand-header h1{
+    color: #5A49EE;
+}
+
 .brand-items {
     display: flex;
     justify-content: center;
 }
 
-.brand-items div {
-    display: grid;
-    place-items: center;
-}
-
-/* .logo-items div {
-    padding: 3rem;
-    display: grid;
-    place-items: center;
-    
-} */
-
 .brand-items div img {
     width: 50%
+}
+
+/* free 30 days */
+.free {
+    display: flex;
+    flex-direction: column;
+    background-color: #5A49EE;
+    padding: 2rem;
+}
+
+.free h2 {
+    text-align: center;
+    color: white;
+}
+
+.free p {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    padding: 1rem 4rem;
+}
+
+
+/* Sign up */
+
+.signup{
+    display: flex;
+    background-color: #5A49EE;
+    padding: 1rem;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.signup form input{
+    border: 1px solid #5A49EE;
+    border-radius: 4px;
+    
+}
+
+input::placeholder{
+    color: #5A49EE;
+    text-align: center;
+}
+
+input[type=text] {
+    flex-grow: 1;
+    height: 3rem;
+    width: 15rem;
+}
+
+input[type=text]:active {
+    border: 1px solid#EEC648;
+}
+
+input[type=button] {
+    flex-grow: 1;
+    background-color: #EEC648;
+    height: 3.1rem;
+    width: 7rem;
+    color: #5A49EE;
+    font-weight: 400;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+input[type=button]:active {
+    
 }
 
 
