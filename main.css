@@ -331,6 +331,7 @@ input[type=text] {
     flex-grow: 1;
     height: 3rem;
     width: 15rem;
+    vertical-align: middle;
 }
 
 input[type=text]:active {
@@ -343,7 +344,7 @@ input[type=button] {
     height: 3.1rem;
     width: 7rem;
     color: #5A49EE;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1rem;
     vertical-align: middle;
 }
@@ -353,6 +354,43 @@ input[type=button]:active {
 }
 
 
+/* footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #5A49EE;
+    color: white;
+}
+
+.subfooter1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.subfooter1 div{
+    display: flex;
+    flex-direction: column;
+}
+
+.subfooter1> ul >li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.subfooter1>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.footer-heading2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
 
 
 
@@ -382,6 +420,21 @@ input[type=button]:active {
 
     .feature-items div img {
         width: 50%;
+    }
+
+    .subfooter1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .subfooter1 div{
+        padding: 1rem;
+    }
+
+    .subfooter1 ul {
+        padding: 1rem;
     }
 }
 
@@ -414,7 +467,12 @@ input[type=button]:active {
         width: 100%;
     }
 
-
+    .subfooter1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+    }
 
 
 }
