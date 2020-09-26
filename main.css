@@ -260,9 +260,39 @@
     width: 30%
 }
 
-.feature-items div h2{
-    padding:1rem;
+.feature-items div h2 {
+    padding: 1rem;
 }
+
+
+/* Brands */
+.brand-header{
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+.brand-items {
+    display: flex;
+    justify-content: center;
+}
+
+.brand-items div {
+    display: grid;
+    place-items: center;
+}
+
+/* .logo-items div {
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+    
+} */
+
+.brand-items div img {
+    width: 50%
+}
+
 
 
 
