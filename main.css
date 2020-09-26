@@ -392,6 +392,21 @@ input[type=button]:active {
     
 }
 
+.subfooter2{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+
+.subfooter2> div> img{
+    width: 5%;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+
+
 
 
 
